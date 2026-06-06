@@ -36,11 +36,11 @@
         }
 
         .prose-top {
-            padding-top: 48px;
+            padding-top: 12px;
         }
 
         .prose-bottom {
-            padding-bottom: 80px;
+            padding-bottom: 16px;
         }
 
         .article-image {
@@ -103,23 +103,25 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.65);
             color: white;
             border: none;
-            width: 36px;
-            height: 36px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
-            font-size: 16px;
+            font-size: 20px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background 0.2s;
+            transition: background 0.2s, transform 0.2s;
             z-index: 2;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
         }
 
         .carousel-btn:hover {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
+            transform: translateY(-50%) scale(1.05);
         }
 
         .carousel-btn.hidden {
@@ -242,7 +244,7 @@
             font-family: Georgia, serif;
             font-size: 1.15em;
             font-weight: bold;
-            margin: 2em 0 0.6em;
+            margin: 0.5em 0 0.4em;
             color: #000000;
         }
 
@@ -261,7 +263,8 @@
             margin: 1em 0;
             font-size: 1em;
             line-height: 1.7;
-            font-style: italic;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
         }
 
         .highlight-box strong {
@@ -276,7 +279,7 @@
         /* ─── SCROLLYTELLING ─── */
 
         .scrolly-outer {
-            margin: 48px 0;
+            margin: 0;
             position: relative;
         }
 
@@ -304,11 +307,11 @@
         }
 
         .step:first-child {
-            padding-top: 60px;
+            padding-top: 10px;
         }
 
         .step:last-child {
-            padding-bottom: 100px;
+            padding-bottom: 10px;
         }
 
         .step-card {
@@ -632,8 +635,8 @@
             </div>
             <div class="hero__head">
                 <h1 class="hero__title">
-                    <span class="hero__lead">Bangladesh getting</span>
-                    <span class="hero__display">HOTTER FASTER</span>
+                    <span class="hero__lead">Bangladesh heating up</span>
+                    <span class="hero__display">FASTER than before</span>
                 </h1>
                 <p class="hero__sub">Extreme heat days nearly tripled in two decades</p>
                 <div class="hero__byline">Report: Abdullah Hel Bubun</div>
@@ -647,20 +650,20 @@
 
     <!-- ── INTRO ── -->
     <div class="prose prose-top" id="article">
-        <p><span style="color: red; font-size: 2em;">B</span>angladesh is heating up faster than before, and the rising
-            heat is becoming increasingly dangerous.</p>
-        <p><b>The number of days each year when the the heat feels unsafe for the human body has nearly tripled in the
-                past two decades</b>. In 2000, Bangladesh recorded about 46 days when the heat index or “feels-like”
-            temperature crossed 35°C. By 2024, that number rose to 120 days -- an increase of 163 percent.</p>
+        <p><span style="color: red; font-size: 2em;">B</span>angladesh is warming at a pace never seen before, and the
+            rising heat is becoming increasingly dangerous.</p>
+        <p><b>The number of days each year when the heat feels unsafe for the human body has nearly tripled in the
+                past two decades. In 2000, Bangladesh recorded about 46 days when the “feels-like” or apparent
+                temperature crossed 35°C. By 2024, that number rose to 120 days -- an increase of 163 percent.</b>.</p>
         <p>No country in the world, except for Cambodia, experienced a steeper rise in the number of such days over the
             same
             period.</p>
         <p>This level of heat is not just uncomfortable. At this threshold, the human body struggles to cool itself,
             especially in Bangladesh’s humid conditions. This increases the risk of illness, reduces people’s ability to
             work, and puts pressure on the economy.</p>
-        <p>The findings are based on an analysis by The Daily Star using Heat Index data from the World Bank’s <a
-                href="https://climateknowledgeportal.worldbank.org/"> Climate Change Knowledge Portal </a> and
-            heat-related health data from the <a href="https://lancetcountdown.org/explore-our-data/"> Lancet Countdown.
+        <p>The findings are based on an analysis by The Daily Star using Heat Index (HI) data compiled by the World
+            Bank’s <a href="https://climateknowledgeportal.worldbank.org/" target="_blank" rel="noopener noreferrer"> Climate Change Knowledge Portal </a> and
+            heat-related health data from the <a href="https://lancetcountdown.org/explore-our-data/" target="_blank" rel="noopener noreferrer"> Lancet Countdown.
             </a></p>
 
         <div class="highlight-box">
@@ -674,22 +677,23 @@
 
         <p>Recent data from the Bangladesh Meteorological Department (BMD) also show how intense and widespread this
             heat has become. Already this year, heatwaves have affected up to <a
-                href="https://www.daily-sun.com/weather/877797/"> 40 districts </a> in a single day (June 2), while
+                href="https://www.daily-sun.com/weather/877797/" target="_blank" rel="noopener noreferrer"> 40 districts </a> on a single day (June 2), while
             smaller spells earlier in the season covered around a dozen districts.</p>
         <p>In 2025, heatwaves spread even further, reaching as many as <a
-                href="https://bdnews24.com/bangladesh/42e17102c1ea">49 districts</a> at once. The situation was most
+                href="https://bdnews24.com/bangladesh/42e17102c1ea" target="_blank" rel="noopener noreferrer">49 districts</a> at once. The situation was most
             severe in 2024, when heatwaves affected 51 out of the 64 districts and set a <a
-                href="https://bdnews24.com/bangladesh/iapny8a4mj"> record </a> for the number of heatwave days in April
+                href="https://bdnews24.com/bangladesh/iapny8a4mj" target="_blank" rel="noopener noreferrer"> record </a> for the number of heatwave days in April
             alone.</p>
 
         <figure class="article-image">
             <img src="images/children_refreshing.JPG" alt="Children refresing in the scorching summer heat">
             <figcaption>Photo Credit: Anisur Rahman.</figcaption>
         </figure>
-        <p>Unlike the World Bank’s Climate Change Knowledge Portal, the BMD defines a heatwave based on actual air
-            temperature, counting it when the daily maximum reaches at least 36°C for two or more consecutive days.</p>
-        <p>Because the World Bank uses a “feels-like” temperature measure while BMD relies on actual temperature, the
-            number of heatwave days reported by the two organisations can differ.</p>
+        <p>The BMD defines a heatwave based on actual air temperature, counting it when the daily maximum reaches at
+            least 36°C for two or more consecutive days. On the other hand, the Heat Index or apparent temperature used
+            by the Climate Change Knowledge Portal combines air temperature and humidity to estimate how hot it actually
+            feels.</p>
+
 
     </div>
     <!-- ── SCROLLYTELLING ── -->
@@ -796,12 +800,17 @@
 
     <!-- ── REST OF ARTICLE ── -->
     <div class="prose prose-bottom">
-        <h2>How Bangladesh Warmed</h2>
-        <p>A review of climate data from 1950 to 2024 reveals that extreme heat days, days with a heat index above 35°C,
-            in Bangladesh have nearly quadrupled since the mid-20th century. In the 1950s, the country averaged less
-            than 30 such days, but that average has steadily increased with every passing decade. The pace of warming
-            markedly increased in the 2010s, which saw nearly 300 additional days above this threshold compared to the
-            preceding decade. The upward trajectory has continued into the 2020s.</p>
+        <h2>Rising faster, and spreading</h2>
+        <p>Although Bangladesh has long been hotter and more humid than many parts of the world, such conditions were
+            generally manageable in the past. However, the situation has worsened over the past 15 years, with extreme
+            heat days becoming increasingly frequent and hazardous.</p>
+        <p>From 2010-2024, Bangladesh on average experienced 96 days a year when the apparent temperature exceeded 35°C.
+        </p>
+        <p>A long-term review of climate data also shows an alarming upward trend.</p>
+        <p>In the 1950s, Bangladesh experienced fewer than 30 days per year on average when the heat index crossed 35°C.
+            That number has steadily increased each decade, nearly quadrupling over time.</p>
+        <p>It accelerated sharply in the 2010s, which saw nearly 300 additional days above this threshold compared to
+            the previous decade. This spike continued in the 2020s.</p>
 
         <!-- ══════════ INTERACTIVE DIVISIONAL HEAT MAP ══════════ -->
         <style>
@@ -1205,14 +1214,21 @@
             })();
         </script>
         <!-- ══════════ END HEAT MAP ══════════ -->
+        <p>Regional patterns also show how widespread the change has become. Khulna has consistently been the hottest
+            division, with heat days rising from around 51 days per year in the 1950s to about 132 days in the 2020s.
+        </p>
+        <p>Chattogram, historically the least affected, still records fewer heat days than other divisions, but it now
+            experiences more extreme heat than the hottest regions did in earlier decades.</p>
+        <p>Md Rabiul Awal, chairman of the Department of Meteorology at Dhaka University, attributed this rise in
+            extreme heat to global warming. “According to most climate projection models, this trend is expected to
+            continue in the coming decades,” he told The Daily Star yesterday.
+        </p>
 
 
-        <h2>Human cost of extreme heat</h2>
-        <p>Extreme heat in Bangladesh causes excess mortality, rising morbidity, and escalating exposure to heat stress,
-            particularly among elderly and infants.</p>
-        <p>More than 4 in every 1,000 deaths in Bangladesh between 2010 and 2021 were attributable to heat, according to
-            data from the Lancet Countdown, which estimated heat-related mortality for 120 countries from 1990 to 2021.
-            Compared to the previous 12-year period, the rate increased by 33 percent.</p>
+
+        <h2>Health, economy hurting</h2>
+        <p>According to Lancet Countdown data, more than 4 out of every 1,000 deaths in Bangladesh between 2010 and 2021
+            were linked to heat exposure, an increase of 33 percent from the previous 12-year period.</p>
 
         <div class="pub-chart-embed-wrapper">
             <style>
@@ -1872,17 +1888,17 @@
         </div>
         <!-- END INTERACTIVE HEAT MAP EMBED -->
 
-        <p>Older people are disproportionately affected by extreme heat. According to one study, around 1,430 people
-            aged 65 and above died from heat-related causes in Bangladesh between 2017 and 2021.</p>
-        <p>Extreme heat stress is also increasingly associated with heatstroke and heat exhaustion, and it can worsen
-            pre-existing conditions such as cardiovascular disease, diabetes, and asthma. It is also limiting light
-            outdoor activities such as walking and running, which are vital for health and well-being. Hot weather
-            reduces the likelihood of exercise and increases the risk of heat-related illness when people do exercise.
-        </p>
-
+        <p>Older people are particularly vulnerable. Around 1,430 people aged 65 and above died from heat-related causes
+            in Bangladesh between 2017 and 2021, according to <a
+                href="https://www.lse.ac.uk/granthaminstitute/publication/impacts-of-climate-change-on-health-in-bangladesh/" target="_blank" rel="noopener noreferrer">a
+                2023 study</a> by the Grantham Research Institute on Climate Change of London School of Economics.</p>
+        <p>Extreme heat causes heatstroke and exhaustion and worsens existing conditions such as heart disease,
+            diabetes, and asthma. It also limits outdoor activities. In 2024, an average person in Bangladesh would have
+            been exposed to extreme heat stress for about 5.2 hours per day while outdoors. Only Cambodia fared worse in
+            this indicator.</p>
         <div class="highlight-box">
-            <strong>In Bangladesh, an average person walking outdoors in 2024 would have been exposed to extreme heat
-                stress for 5.2 hours per day. Only Cambodia fared worse in this indicator.</strong>
+            <strong> In 2024, an average person in Bangladesh would have been exposed to extreme heat stress for about
+                5.2 hours per day while outdoors. Only Cambodia fared worse in this indicator.</strong>
         </div>
 
         <figure class="article-carousel">
@@ -1891,6 +1907,8 @@
                     <img class="carousel-slide" src="images/rickshawpuller_1.JPG"
                         alt="Rickshawpullers in the scorching heat">
                     <img class="carousel-slide" src="images/rickshawpuller_2.JPG"
+                        alt="Rickshawpullers in the scorching heat">
+                    <img class="carousel-slide" src="images/rickshawpuller_3.JPG"
                         alt="Rickshawpullers in the scorching heat">
                 </div>
                 <button class="carousel-btn prev-btn" aria-label="Previous image"
@@ -1947,27 +1965,61 @@
 
                 setTimeout(updateButtons, 100);
                 setTimeout(updateButtons, 500); // Fallback for slow loads
+
+                // Autoplay when in view
+                let autoplayInterval;
+                const startAutoplay = () => {
+                    if (!autoplayInterval) {
+                        autoplayInterval = setInterval(() => {
+                            if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 5) {
+                                track.scrollTo({ left: 0, behavior: 'smooth' });
+                            } else {
+                                track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+                            }
+                        }, 1500);
+                    }
+                };
+
+                const stopAutoplay = () => {
+                    if (autoplayInterval) {
+                        clearInterval(autoplayInterval);
+                        autoplayInterval = null;
+                    }
+                };
+
+                track.addEventListener('touchstart', stopAutoplay, { passive: true });
+                track.addEventListener('mousedown', stopAutoplay);
+                if (prevBtn) prevBtn.addEventListener('click', stopAutoplay);
+                if (nextBtn) nextBtn.addEventListener('click', stopAutoplay);
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            startAutoplay();
+                        } else {
+                            stopAutoplay();
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(container);
             }
 
             initCarousel('rickshawCarousel');
         </script>
 
-        <p>Rising temperatures also affect mental health. A nationally representative World Bank survey found that the
-            likelihood of reporting depression increased by 23.8% and anxiety by 37.1% on days when temperatures
-            exceeded 35°C, compared with days when temperatures remained below 30°C. Females were found to experience a
-            higher prevalence of depression and anxiety.</p>
+        <p>A nationally representative <a
+                href="https://openknowledge.worldbank.org/entities/publication/36c167d3-c733-445a-bc76-9d158aa9134e" target="_blank" rel="noopener noreferrer">
+                World Bank survey </a> in 2024 also found that the likelihood of depression increased by 23.8 percent
+            and anxiety by 37.1 percent on days when temperatures exceeded 35°C. Women were more affected.</p>
 
-        <h2>Economic Burden of Extreme Heat</h2>
-
-        <p>Bangladesh is the world's second most heat-exposed country, and the growing heat burden is increasingly
-            affecting its economy. In 2024 alone, heat-related physical and mental health impacts were estimated to have
-            resulted in the loss of 25 million workdays in Bangladesh. The associated economic losses are projected at
-            between $1.33 billion and $1.78 billion, equivalent to roughly 0.3 percent to 0.4 percent of the country's
-            gross domestic product (GDP).</p>
-        <p>Extreme heat is also affecting work-days. According to Lancet Countdown estimates, a worker in Bangladesh
-            lost an average of 391 working hours in 2024 due to heat stress, assuming service and manufacturing workers
-            operate in the shade while agricultural and construction workers work under direct sunlight. Between 2015
-            and 2024, only 10 countries recorded higher annual work-hour losses from heat exposure than Bangladesh.</p>
+        <p>Extreme heat also hurts the economy. In 2024 alone, heat-related physical and mental health impacts resulted
+            in an estimated loss of up to 25 million workdays in Bangladesh. The economic cost is estimated at between
+            $1.33 billion and $1.78 billion, or roughly 0.3 to 0.4 percent of the country’s GDP, the same WB study
+            found. </p>
+        <p>Much of this loss comes from reduced labour productivity. According to Lancet Countdown estimates, an average
+            worker in Bangladesh lost about 391 working hours in 2024 due to heat stress. Between 2015 and 2024, only 10
+            countries recorded higher annual work-hour losses.</p>
         <!-- ── ECONOMIC METRICS CALLOUTS (UPDATED BLUE SCHEME) ── -->
         <div class="stat-cards-container"
             style="max-width: 740px; margin: 24px auto; font-family: Georgia, 'Times New Roman', serif; box-sizing: border-box;">
@@ -1981,7 +2033,7 @@
                 </div>
                 <div class="metric-title"
                     style="font-size: 15px; font-weight: 700; color: #000000; margin-bottom: 10px; letter-spacing: -0.01em;">
-                    Annual Economic Losses (2024)
+                    Annual economic losses (2024)
                 </div>
                 <div class="metric-desc"
                     style="font-family: Georgia, serif; font-size: 14.5px; color: #555555; line-height: 1.5;">
@@ -1994,11 +2046,11 @@
                 style="background: #ffffff; border-top: 5px solid #1e3a8a; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-radius: 0 0 6px 6px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
                 <div class="metric-number"
                     style="font-family: Georgia, serif; font-size: 42px; font-weight: bold; color: #1e3a8a; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 6px;">
-                    391 Hours
+                    391 hours
                 </div>
                 <div class="metric-title"
                     style="font-size: 15px; font-weight: 700; color: #000000; margin-bottom: 10px; letter-spacing: -0.01em;">
-                    Average Lost Time Per Worker (2024)
+                    Average lost time per worker (2024)
                 </div>
                 <div class="metric-desc"
                     style="font-family: Georgia, serif; font-size: 14.5px; color: #555555; line-height: 1.5;">
@@ -2007,21 +2059,32 @@
             </div>
 
         </div>
-        <p>Agricultural workers were the hardest hit, losing an average of 732 working hours each in 2024 because of
-            extreme heat. Put differently, based on a standard eight-hour workday, the average Bangladeshi agricultural
-            worker lost the equivalent of about 92 full working days in 2024 because temperatures were too hot to safely
-            be in the fields.</p>
+        <p>Agricultural workers were the most affected, losing an average of 732 working hours in 2024 due to extreme
+            heat, the equivalent of around 92 full working days, based on an eight-hour workday. Construction workers
+            lost about 285 hours, while service-sector workers lost around 111 hours.</p>
+        <p>For many workers who depend on daily wages, this translates directly into lost income. For example, assuming
+            a daily wage of Tk 500 for a farm worker, losing 92 working days would mean a loss of around Tk 46,000 in a
+            single year or about Tk 4,000 per month.</p>
+        <p>In a country where millions rely on daily earnings to survive, such losses can have serious consequences for
+            household income and food security.</p>
+        <p>The Daily Star spoke to four rickshaw pullers aged 50-65 in Dhaka’s Farmgate. All four said they lose working
+            hours during extreme heat, as the conditions make it difficult to carry passengers.</p>
+        <p>Md Azad, one of the rickshaw pullers interviewed, said that due to the heat, he has to rest a while after
+            every trip. “On very hot days, I earn Tk 200-300 less.”</p>
 
-        <h2>What future holds</h2>
-        <p>Bangladesh is projected to face more hot days over the remainder of the 21st century. Between 2026 and 2050,
-            the country could see an additional 32 days each year with a heat index above 35°C compared with 2000–2024
-            under a moderate 'middle of the road' climate projection (SSP245). Even under the most optimistic scenario
-            (SSP119), one that assumes the world reaches net-zero emissions by 2050, Bangladesh could still face 23 such
-            days.</p>
-        <p>In the worst case (SSP585), if the world pursues rapid, energy-intensive development and relies heavily on
-            fossil fuels, the number stood at 41 days.</p>
 
 
+        <h2>A grim projection</h2>
+        <p>Climate projections show Bangladesh will face even more days with heat index above 35°C in the coming
+            decades.</p>
+        <p>Between 2026 and 2050, the country could see an additional 32 such days each year under a moderate,
+            “middle-of-the-road” climate scenario. This scenario is based on the assumption that socio-economic
+            development and greenhouse gas emissions will continue along historical trends until around mid-century
+            before a gradual decline.</p>
+        <p>Even in the best-case scenario, where the world reaches net-zero emissions by 2050, Bangladesh is likely to
+            face at least 23 extra days annually.</p>
+        <p>In the worst-case scenario, where fossil fuel use remains high, the increase could reach 41 additional days.
+        </p>
         <!-- Embedded Project pathways component -->
         <div class="flourish-alt-chart-embed unified-chart-block">
             <h3 class="uc-title">Projected extreme heat days</h3>
@@ -2054,20 +2117,18 @@
                 World Bank Group</div>
         </div>
 
-        <p>Two coastal divisions, Khulna and Barishal, are projected to be the most affected. Khulna, according to
-            SSP245, will lead in through until the 2050s, but Barishal will overtake it in subsequent decades. By the
-            2080s, both divisions could face more than 200 extreme heat days per year.</p>
-        <p>
-        <p>Wetness or humidity is identified to be responsible for rise in apparent temperature in Khulna and Barishal.
-            Research suggests that by the century's end, humidity will become the dominant climate concern across these
-            regions. The already water-rich landscapes of Barishal and Khulna, dotted with rivers and wetlands, will
-            likely grow more humid and waterlogged, creating a compounded stress on agriculture, health, and
-            infrastructure.</p>
+        <p>Coastal regions are expected to be hit the hardest. For example, Khulna is projected to remain the most
+            heat-affected area until around mid-century, after which Barishal could overtake it. By the 2080s, both
+            divisions may face nearly 200 days of extreme heat each year even in the middle-of-the-road scenario.</p>
 
+        <p>This growing intensity is driven not just by rising temperatures, but by humidity. In Khulna and Barishal,
+            increasing moisture levels significantly raise the “apparent” temperature, making heat more dangerous.</p>
+        <p>By the end of the century, humidity is expected to become the region’s dominant climate stressor, increasing
+            discomfort and risk in these already waterlogged, riverine landscapes.</p>
         <div class="flourish-divisional-chart-embed unified-chart-block">
 
             <!-- Header Block -->
-            <h4 class="uc-title">Regional Heat Projections (SSP245)</h4>
+            <h4 class="uc-title">Regional heat projections (SSP245)</h4>
             <p class="uc-sub">Annual days with a heat index exceeding 35°C by division.</p>
 
             <!-- Period Selection Tabs (Flourish Style) -->
@@ -2233,19 +2294,22 @@
                 });
             }
         </script>
-        <h2>Deforestation is compounding Bangladesh's Vulnerability</h2>
+        <h2>What’s causing it</h2>
 
-        <p>As Bangladesh faces intensifying heat from global climate change, it's simultaneously losing the natural
-            shield that could help it cope. Between 2001 and 2024, the country shed an average of 7,385 hectares of
-            forest annually, according to satellite data from Global Forest Watch, which tracks canopy cover at a 30%
-            density threshold.</p>
-        <p>The situation progressively worsened. In the 2000s, the country lost an average of 4,364 hectares of tree
-            cover each year. The number stood at 13589 in the 2010s. During the present decade, annual tree loss more
-            than tripled, standing at an average of 16,275 hectares every year.</p>
-        <p>Over the same time, extreme heat in Bangladesh similarly soared.</p>
+        <p>According to Lancet Countdown, climate change was responsible for 51 out of 86 heatwaves recorded in
+            Bangladesh between 2020 and 2024. While climate change is identified as the primary driver of extreme heat
+            in Bangladesh, experts and a growing body of research point out that local factors also play a role.</p>
+        <p>For example, rapid urbanisation is increasing heat exposure, especially in cities like Dhaka. Concrete
+            buildings, roads, and infrastructure trap heat, create what is known as the Urban Heat Island effect. This
+            causes cities to become significantly hotter than surrounding rural areas.</p>
+        <p>Bangladesh is also losing tree cover at a faster rate than before.</p>
+        <p>Between 2001 and 2024, the country lost an average of 7,385 hectares of forest each year, according to
+            satellite data from Global Forest Watch, which tracks canopy cover at a 30% density threshold. The annual
+            loss has increased over time -- from about 4,364 hectares in the 2000s to over 16,000 hectares in the 2020s.
+        </p>
         <!-- 1. The Widget HTML Structure -->
         <div class="env-widget-container unified-chart-block">
-            <h2 class="uc-title">Deforestation vs. Extreme Heat Days</h2>
+            <h2 class="uc-title">Deforestation vs. Extreme heat days</h2>
             <p class="uc-sub">Comparing annual tree cover loss (ha) with days experiencing a Heat Index over 35°C in
                 Bangladesh.</p>
             <div class="env-widget-chart-space">
@@ -2285,7 +2349,7 @@
                 // Exact timeline data from "Deforestation Data - Sheet2 (2).csv" (2001-2024)
                 const years = [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
                 const treeLoss = [4587, 3995, 2159, 4282, 3293, 6863, 3995, 4480, 5625, 4668, 4181, 5359, 6022, 12061, 12603, 21196, 28377, 19343, 22079, 21476, 17587, 13798, 17787, 15929];
-                const heatDays = [50.6, 45.5, 62.5, 56.8, 71.7, 66.6, 68.4, 58.2, 84.2, 103.0, 64.7, 91.7, 76.6, 91.9, 81.2, 102.7, 99.1, 87.9, 108.8, 103.8, 101.7, 106.8, 105.6, 120.3];
+                const heatDays = [51, 45, 62, 57, 72, 67, 68, 58, 84, 103, 65, 92, 77, 92, 81, 103, 99, 88, 109, 104, 102, 107, 106, 120];
 
                 new Chart(ctx, {
                     type: 'bar',
@@ -2380,10 +2444,8 @@
             })();
         </script>
         <br>
-        <p>While a year's deforestation will not immediately increase that year's temperature, forest canopy loss over
-            the years is permanently eroding Bangladesh's natural cooling capacity. Experts urged the government to act
-            swiftly, arguing that while reducing greenhouse gas emissions requires coordinated global action, forest
-            conservation and restoration are steps Bangladesh can pursue on its own.</p>
+        <p>While deforestation does not immediately raise temperatures in a single year, long-term loss of tree cover
+            reduces a country’s natural cooling capacity, which makes heat more intense over time.</p>
 
         <figure class="article-collage">
             <div class="collage-grid">
@@ -2422,11 +2484,17 @@
                 document.body.style.overflow = '';
             }
         </script>
-        <p>Extreme heat is increasingly being linked to rapid urbanisation as well. A global study of over 13,000 cities
-            showed that urban exposure increased nearly 200%, which has affected 1.7 billion people during 1983-2016.
-            Dhaka, a megacity, is no exception. Dhaka's temperature is rising at a notably faster than the national
-            average. The capital, in fact, is experiencing a pronounced Urban Heat Island effect — a phenomenon in which
-            built-up urban areas become significantly warmer than their surrounding rural regions.</p>
+        <p>Golam Rabbani, director of the Centre for Climate Change and Environmental Research at BRAC University, said
+            that temperature levels tend to rise with increasing human and industrial activity.</p>
+        <p>“Urbanisation undoubtedly influences local temperatures. Expanding industrial operations, growing vehicle
+            use, dense construction, and rising population concentrations all contribute additional heat to the urban
+            environment,” he told this newspaper yesterday.</p>
+        <p>As the intensity of these activities varies across different parts of the city, temperature readings can also
+            differ between areas such as Sher-e-Bangla Nagar, Farmgate, and Jatrabari, he said.</p>
+        <p>“Deforestation also contributes to extreme heat by reducing evapotranspiration -- the natural process through
+            which trees and vegetation release moisture into the atmosphere, helping cool the surrounding environment.
+            As green cover declines, this cooling effect weakens, increasing the risk of higher temperatures,” he said.
+        </p>
     </div>
 
     <script>
@@ -2924,7 +2992,7 @@
         /* ── Pull quote ── */
         .highlight-box {
             border: 0;
-            border-left: 3px solid var(--ember);
+            border-left: 4px solid var(--ember);
             background: transparent;
             padding: .1em 0 .1em 30px;
             margin: 2.2em 0;
@@ -3393,7 +3461,7 @@
             }
 
             .hero__display {
-                font-size: 11.5vw;
+                font-size: 10.5vw;
                 white-space: nowrap;
                 max-width: 100%;
             }
@@ -3526,7 +3594,7 @@
                     <span class="report-footer__label">Report:</span> Abdullah Hel Bubun
                 </div>
                 <div class="report-footer__credit">
-                    <span class="report-footer__label">Visual:</span> Abdullah Hel Bubun, Mir Rownak
+                    <span class="report-footer__label">Visual:</span> Mir Rownak
                 </div>
             </div>
         </div>
@@ -3602,7 +3670,8 @@
         }
     </style>
 
-    <button id="backToTop" class="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8593;</button>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8593;</button>
     <style>
         .back-to-top {
             position: fixed;
@@ -3624,16 +3693,18 @@
             transition: opacity 0.3s, visibility 0.3s, background-color 0.2s;
             z-index: 9999;
         }
+
         .back-to-top.visible {
             opacity: 1;
             visibility: visible;
         }
+
         .back-to-top:hover {
             background-color: rgba(15, 23, 42, 0.8);
         }
     </style>
     <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             var btt = document.getElementById('backToTop');
             if (window.scrollY > 500) {
                 btt.classList.add('visible');
