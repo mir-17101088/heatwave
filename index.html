@@ -2113,15 +2113,30 @@
                 '2076-2100': [139.57, 154.02, 156.95, 156.42, 176.89, 186.13, 204.65, 200.49]
             };
 
+            function getSortedData(periodKey) {
+                const combined = divisions.map((division, index) => ({
+                    division: division,
+                    value: dynamicPeriodData[periodKey][index]
+                }));
+                // Sort ascending
+                combined.sort((a, b) => a.value - b.value);
+                
+                return {
+                    labels: combined.map(item => item.division),
+                    data: combined.map(item => item.value)
+                };
+            }
+
             document.addEventListener("DOMContentLoaded", function () {
                 const ctx = document.getElementById('divisionalClimateChart').getContext('2d');
+                const initialSorted = getSortedData('2026-50');
 
                 divisionalChart = new Chart(ctx, {
                     type: 'bar',
                     data: {
-                        labels: divisions,
+                        labels: initialSorted.labels,
                         datasets: [{
-                            data: dynamicPeriodData['2026-50'],
+                            data: initialSorted.data,
                             backgroundColor: '#c0231f', // Cohesive ember accent
                             hoverBackgroundColor: '#8a0f1c',
                             borderRadius: 3,
@@ -2178,8 +2193,11 @@
             function switchPeriod(periodKey) {
                 if (!divisionalChart) return;
 
+                const sorted = getSortedData(periodKey);
+
                 // Update values
-                divisionalChart.data.datasets[0].data = dynamicPeriodData[periodKey];
+                divisionalChart.data.labels = sorted.labels;
+                divisionalChart.data.datasets[0].data = sorted.data;
                 divisionalChart.update();
 
                 // Adjust navigation tab states
