@@ -705,7 +705,7 @@
                 <button class="carousel-btn next-btn" aria-label="Next image"
                     onclick="scrollCarousel('rickshawCarousel', 1)">&#10095;</button>
             </div>
-            <figcaption>Photo Credit: Mehedi Rahman, Anisur Rahman.</figcaption>
+            <figcaption>Photo Credit: Mehedi Hasan, Anisur Rahman.</figcaption>
         </figure>
 
         <script>
@@ -1992,7 +1992,7 @@
             <script>
                 // Add touch support for tooltips on mobile
                 document.querySelectorAll('.pub-bar-col').forEach(col => {
-                    col.addEventListener('touchstart', function(e) {
+                    col.addEventListener('touchstart', function (e) {
                         e.stopPropagation();
                         // Remove active class from other bars
                         document.querySelectorAll('.pub-bar-col').forEach(c => {
@@ -2001,7 +2001,7 @@
                         this.classList.toggle('active');
                     });
                 });
-                
+
                 // Clicking anywhere else removes the tooltip
                 document.addEventListener('touchstart', () => {
                     document.querySelectorAll('.pub-bar-col').forEach(c => c.classList.remove('active'));
