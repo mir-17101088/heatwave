@@ -79,10 +79,12 @@
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
         }
-        
+
         .carousel-track::-webkit-scrollbar {
             display: none;
         }
@@ -142,7 +144,7 @@
             margin: 32px 0;
             width: 100%;
         }
-        
+
         .collage-grid {
             display: flex;
             flex-wrap: wrap;
@@ -166,11 +168,14 @@
             width: 100%;
         }
 
-        .collage-item-2, .collage-item-3 {
+        .collage-item-2,
+        .collage-item-3 {
             width: calc(50% - 4px);
         }
 
-        .collage-item-4, .collage-item-5, .collage-item-6 {
+        .collage-item-4,
+        .collage-item-5,
+        .collage-item-6 {
             width: calc(33.333% - 5.33px);
         }
 
@@ -219,7 +224,7 @@
             text-decoration: none;
             cursor: pointer;
         }
-        
+
         @media (max-width: 600px) {
             .lightbox-close {
                 top: 10px;
@@ -619,7 +624,8 @@
         </div>
         <div class="hero__inner">
             <div class="hero__top">
-                <a href="https://www.thedailystar.net" target="_blank" rel="noopener noreferrer"><img src="logo.svg" class="hero__masthead" alt="The Daily Star"></a>
+                <a href="https://www.thedailystar.net" target="_blank" rel="noopener noreferrer"><img src="logo.svg"
+                        class="hero__masthead" alt="The Daily Star"></a>
                 <span class="hero__kicker">CLIMATE&ensp;|&ensp;ANALYSIS</span>
             </div>
             <div class="hero__head">
@@ -674,7 +680,7 @@
             alone.</p>
 
         <figure class="article-image">
-            <img src="images/children_refreshing.jpg" alt="Children refresing in the scorching summer heat">
+            <img src="images/children_refreshing.JPG" alt="Children refresing in the scorching summer heat">
             <figcaption>Children refresing in the scorching summer heat, Photo Credit: Anisur Rahman.</figcaption>
         </figure>
         <p>Unlike the World Bank’s Climate Change Knowledge Portal, the BMD defines a heatwave based on actual air
@@ -1027,7 +1033,8 @@
                     <input type="range" class="heatmap-slider" id="bdHeatSlider" min="1950" max="2024" step="1"
                         value="1950" aria-label="Select year">
                     <div class="heatmap-slider-scale">
-                        <span>1950</span><span>1970</span><span>1990</span><span>2010</span><span>2024</span></div>
+                        <span>1950</span><span>1970</span><span>1990</span><span>2010</span><span>2024</span>
+                    </div>
                 </div>
                 <div class="heatmap-readout">
                     <div class="heatmap-year" id="bdHeatYear">1950</div>
@@ -1878,15 +1885,19 @@
         <figure class="article-carousel">
             <div class="carousel-container" id="rickshawCarousel">
                 <div class="carousel-track">
-                    <img class="carousel-slide" src="images/rickshawpuller_1.JPG" alt="Rickshawpullers in the scorching heat">
-                    <img class="carousel-slide" src="images/rickshawpuller_2.JPG" alt="Rickshawpullers in the scorching heat">
+                    <img class="carousel-slide" src="images/rickshawpuller_1.JPG"
+                        alt="Rickshawpullers in the scorching heat">
+                    <img class="carousel-slide" src="images/rickshawpuller_2.JPG"
+                        alt="Rickshawpullers in the scorching heat">
                 </div>
-                <button class="carousel-btn prev-btn" aria-label="Previous image" onclick="scrollCarousel('rickshawCarousel', -1)">&#10094;</button>
-                <button class="carousel-btn next-btn" aria-label="Next image" onclick="scrollCarousel('rickshawCarousel', 1)">&#10095;</button>
+                <button class="carousel-btn prev-btn" aria-label="Previous image"
+                    onclick="scrollCarousel('rickshawCarousel', -1)">&#10094;</button>
+                <button class="carousel-btn next-btn" aria-label="Next image"
+                    onclick="scrollCarousel('rickshawCarousel', 1)">&#10095;</button>
             </div>
             <figcaption>Rickshawpullers in the scorching heat, Photo Credit: Anisur Rahman</figcaption>
         </figure>
-        
+
         <script>
             function scrollCarousel(id, direction) {
                 const container = document.getElementById(id);
@@ -2343,12 +2354,18 @@
 
         <figure class="article-collage">
             <div class="collage-grid">
-                <img src="images/collage1.jpeg" class="collage-item collage-item-1" alt="Collage image 1" onclick="openLightbox(this.src)">
-                <img src="images/collage2.jpg" class="collage-item collage-item-2" alt="Collage image 2" onclick="openLightbox(this.src)">
-                <img src="images/collage3.JPG" class="collage-item collage-item-3" alt="Collage image 3" onclick="openLightbox(this.src)">
-                <img src="images/collage4.JPG" class="collage-item collage-item-4" alt="Collage image 4" onclick="openLightbox(this.src)">
-                <img src="images/collage5.JPG" class="collage-item collage-item-5" alt="Collage image 5" onclick="openLightbox(this.src)">
-                <img src="images/collage6.JPG" class="collage-item collage-item-6" alt="Collage image 6" onclick="openLightbox(this.src)">
+                <img src="images/collage1.jpeg" class="collage-item collage-item-1" alt="Collage image 1"
+                    onclick="openLightbox(this.src)">
+                <img src="images/collage2.jpg" class="collage-item collage-item-2" alt="Collage image 2"
+                    onclick="openLightbox(this.src)">
+                <img src="images/collage3.JPG" class="collage-item collage-item-3" alt="Collage image 3"
+                    onclick="openLightbox(this.src)">
+                <img src="images/collage4.JPG" class="collage-item collage-item-4" alt="Collage image 4"
+                    onclick="openLightbox(this.src)">
+                <img src="images/collage5.JPG" class="collage-item collage-item-5" alt="Collage image 5"
+                    onclick="openLightbox(this.src)">
+                <img src="images/collage6.JPG" class="collage-item collage-item-6" alt="Collage image 6"
+                    onclick="openLightbox(this.src)">
             </div>
         </figure>
 
@@ -2356,7 +2373,7 @@
             <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
             <img class="lightbox-content" id="lightbox-img">
         </div>
-        
+
         <script>
             function openLightbox(src) {
                 const lightbox = document.getElementById('lightbox');
@@ -2365,7 +2382,7 @@
                 lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
             }
-        
+
             function closeLightbox() {
                 const lightbox = document.getElementById('lightbox');
                 lightbox.classList.remove('active');
@@ -3360,7 +3377,8 @@
                 max-width: 100%;
             }
 
-            .hero__lead, .hero__sub {
+            .hero__lead,
+            .hero__sub {
                 text-align: center;
                 max-width: 100%;
                 color: #fff;
