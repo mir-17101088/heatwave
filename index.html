@@ -634,18 +634,19 @@
                     <span class="hero__display">HOTTER FASTER</span>
                 </h1>
                 <p class="hero__sub">Extreme heat days nearly tripled in two decades</p>
-                <div class="hero__byline"><span class="hero__byline-rule"></span>Report: Abdullah Hel Bubun</div>
+                <div class="hero__byline">Report: Abdullah Hel Bubun</div>
             </div>
         </div>
         <a class="hero__scroll" href="#article" aria-label="Scroll to the story">
-            <span class="hero__scroll-txt">Begin</span>
+
             <span class="hero__scroll-arrow" aria-hidden="true">&#8595;</span>
         </a>
     </header>
 
     <!-- ── INTRO ── -->
     <div class="prose prose-top" id="article">
-        <p><span style="color: red; font-size: 2em;">B</span>angladesh is heating up faster than before, and the rising heat is becoming increasingly dangerous.</p>
+        <p><span style="color: red; font-size: 2em;">B</span>angladesh is heating up faster than before, and the rising
+            heat is becoming increasingly dangerous.</p>
         <p><b>The number of days each year when the the heat feels unsafe for the human body has nearly tripled in the
                 past two decades</b>. In 2000, Bangladesh recorded about 46 days when the heat index or “feels-like”
             temperature crossed 35°C. By 2024, that number rose to 120 days -- an increase of 163 percent.</p>
@@ -681,7 +682,7 @@
 
         <figure class="article-image">
             <img src="images/children_refreshing.JPG" alt="Children refresing in the scorching summer heat">
-            <figcaption>Children refresing in the scorching summer heat, Photo Credit: Anisur Rahman.</figcaption>
+            <figcaption>Photo Credit: Anisur Rahman.</figcaption>
         </figure>
         <p>Unlike the World Bank’s Climate Change Knowledge Portal, the BMD defines a heatwave based on actual air
             temperature, counting it when the daily maximum reaches at least 36°C for two or more consecutive days.</p>
@@ -773,9 +774,9 @@
                             <p class="chart-title">Heatwaves with and without climate change, 2020–2024</p>
                             <p class="chart-sub">Number of heatwaves per year in Bangladesh</p>
                             <div class="custom-legend">
-                                <span><span class="leg-swatch" style="background:#2b2018"></span>Attributed to climate
+                                <span><span class="leg-swatch" style="background:#60a5fa"></span>Attributed to climate
                                     change</span>
-                                <span><span class="leg-swatch" style="background:#cfc3b2"></span>Would occur
+                                <span><span class="leg-swatch" style="background:#cbd5e1"></span>Would occur
                                     naturally</span>
                             </div>
                             <div style="height:260px; position:relative;">
@@ -1178,7 +1179,7 @@
                     timer = setInterval(() => {
                         if (current >= 2024) { stop(); return; }
                         render(current + 1);
-                    }, 140);
+                    }, 250);
                 }
                 btn.addEventListener('click', play);
                 document.getElementById('bdHeatSlider').addEventListener('input', e => { stop(); render(+e.target.value); });
@@ -1332,7 +1333,7 @@
 
                 .pub-bar-graphic {
                     width: 100% !important;
-                    background-color: #991b1b !important;
+                    background-color: #7f1d1d !important;
                     border-radius: 1px 1px 0 0 !important;
                     transition: background-color 0.15s ease !important;
                     position: relative !important;
@@ -1352,7 +1353,7 @@
 
                 /* Column Micro-interactions */
                 .pub-bar-col:hover .pub-bar-graphic {
-                    background-color: #dc2626 !important;
+                    background-color: #b91c1c !important;
                 }
 
                 /* Interactive Floating Tooltips */
@@ -1895,7 +1896,7 @@
                 <button class="carousel-btn next-btn" aria-label="Next image"
                     onclick="scrollCarousel('rickshawCarousel', 1)">&#10095;</button>
             </div>
-            <figcaption>Rickshawpullers in the scorching heat, Photo Credit: Anisur Rahman</figcaption>
+            <figcaption>Photo Credit: Anisur Rahman</figcaption>
         </figure>
 
         <script>
@@ -1931,7 +1932,19 @@
                     window.requestAnimationFrame(updateButtons);
                 });
                 window.addEventListener('resize', updateButtons);
+
+                // Ensure buttons update correctly after images load
+                const images = track.querySelectorAll('img');
+                images.forEach(img => {
+                    if (img.complete) {
+                        updateButtons();
+                    } else {
+                        img.addEventListener('load', updateButtons);
+                    }
+                });
+
                 setTimeout(updateButtons, 100);
+                setTimeout(updateButtons, 500); // Fallback for slow loads
             }
 
             initCarousel('rickshawCarousel');
@@ -2120,7 +2133,7 @@
                 }));
                 // Sort ascending
                 combined.sort((a, b) => a.value - b.value);
-                
+
                 return {
                     labels: combined.map(item => item.division),
                     data: combined.map(item => item.value)
@@ -2409,7 +2422,7 @@
         </script>
         <p>Extreme heat is increasingly being linked to rapid urbanisation as well. A global study of over 13,000 cities
             showed that urban exposure increased nearly 200%, which has affected 1.7 billion people during 1983-2016.
-            Dhaka, a megacity, is no exception. Dhakaa's temperature is rising at a notably faster than the national
+            Dhaka, a megacity, is no exception. Dhaka's temperature is rising at a notably faster than the national
             average. The capital, in fact, is experiencing a pronounced Urban Heat Island effect — a phenomenon in which
             built-up urban areas become significantly warmer than their surrounding rural regions.</p>
     </div>
@@ -2467,8 +2480,8 @@
                     chart.getDatasetMeta(0).data.forEach((bar, i) => {
                         ctx.save();
                         ctx.font = 'bold 11px -apple-system, sans-serif';
-                        // Highlight Bangladesh value in red, use dark gray for others
-                        ctx.fillStyle = i === 3 ? '#c0231f' : '#8a7d6c';
+                        // Highlight Bangladesh value in blue, use slate for others
+                        ctx.fillStyle = i === 3 ? '#2563eb' : '#64748b';
                         ctx.textAlign = 'left';
                         ctx.textBaseline = 'middle';
                         // Draw value 6 pixels past the end edge of the horizontal bar
@@ -2484,7 +2497,7 @@
                     labels: ['Bahrain', 'Qatar', 'UAE', 'Bangladesh', 'Cambodia', 'Kuwait', 'Cambodia', 'India', 'Macau', 'Pakistan'],
                     datasets: [{
                         data: rankingData,
-                        backgroundColor: (context) => context.dataIndex === 3 ? '#c0231f' : '#2b2018',
+                        backgroundColor: (context) => context.dataIndex === 3 ? '#3b82f6' : '#cbd5e1',
                         borderRadius: 3
                     }]
                 },
@@ -2643,7 +2656,7 @@
                     chart.getDatasetMeta(0).data.forEach((bar, i) => {
                         ctx.save();
                         ctx.font = 'bold 16 px -apple-system, sans-serif';
-                        ctx.fillStyle = '#2b2018'; // Matches the bar color
+                        ctx.fillStyle = '#1e3a8a'; // Matches the bar color
                         ctx.textAlign = 'center';
                         ctx.textBaseline = 'bottom';
                         // Positions text 4 pixels above the top edge of each bar
@@ -2659,7 +2672,7 @@
                     labels: ['1950s', '1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s*'],
                     datasets: [{
                         data: decadalData,
-                        backgroundColor: '#2b2018',
+                        backgroundColor: '#60a5fa',
                         borderRadius: 4
                     }]
                 },
@@ -2713,8 +2726,8 @@
                 data: {
                     labels: hwYears,
                     datasets: [
-                        { label: 'Attributed to climate change', data: hwCC, backgroundColor: '#2b2018', stack: 'hw', borderRadius: 0 },
-                        { label: 'Would occur naturally', data: hwNatural, backgroundColor: '#cfc3b2', stack: 'hw', borderRadius: 0 }
+                        { label: 'Attributed to climate change', data: hwCC, backgroundColor: '#60a5fa', stack: 'hw', borderRadius: 0 },
+                        { label: 'Would occur naturally', data: hwNatural, backgroundColor: '#cbd5e1', stack: 'hw', borderRadius: 0 }
                     ]
                 },
                 plugins: [stackTotalPlugin],
@@ -2905,17 +2918,6 @@
             border-top: 1px solid var(--rule);
             text-wrap: balance;
         }
-
-        .prose>h2::before {
-            counter-increment: section;
-            content: counter(section, decimal-leading-zero);
-            display: block;
-            font-family: var(--ui);
-            font-size: .72rem;
-            font-weight: 700;
-            letter-spacing: .22em;
-            color: var(--ember);
-            margin-bottom: .85rem;
         }
 
         /* ── Pull quote ── */
