@@ -1263,6 +1263,14 @@
                 function onMove(event, d) { hovered = d; lastX = event.clientX; lastY = event.clientY; paintTip(); }
                 function onLeave() { hovered = null; tip.style('opacity', 0); }
 
+                // Close tooltip on mobile when scrolling or tapping outside
+                window.addEventListener('scroll', onLeave, { passive: true });
+                document.addEventListener('touchstart', (e) => {
+                    if (!e.target.closest('#bdHeatMap') && !e.target.closest('#bdHeatTip')) {
+                        onLeave();
+                    }
+                }, { passive: true });
+
                 function render(year) {
                     current = year;
                     paths.attr('fill', d => { const v = valOf(d.properties.Division, year); return v == null ? '#e5e7eb' : color(v); });
